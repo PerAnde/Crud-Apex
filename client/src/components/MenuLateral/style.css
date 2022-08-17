@@ -1,0 +1,154 @@
+.sidebar {
+    position: relative;
+    width: 90px;
+    min-height: 100vh;
+    height: auto;
+    padding: 30px 15px;
+    background-color: var(--white);
+    transition: all 0.4s ease-out;
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    max-width: 100%;
+}
+
+.sidebar .logo span {
+    display: none;
+    font-size: 25px;
+    color: var(--textDark);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    color: var(--textDark);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.profile:hover {
+    background-color: var(--primaryColorLight);
+    color: var(--primaryColor);
+}
+
+.profile .imgProfile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .imgProfile img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.profile .descriptionProfile {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px 0;
+}
+
+.profile .descriptionProfile span.nameProfile {
+    font-weight: 700;
+}
+
+.profile .descriptionProfile span.nivelProfile {
+    font-size: 13px;
+}
+
+.sidebar nav ul.navLinks {
+    text-align: left;
+}
+
+.sidebar nav ul li {
+    position: relative;
+}
+
+.sidebar nav ul li:hover {
+    background-color: var(--primaryColorLight);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.sidebar nav ul.navLinks li ul.subMenu {
+    padding: 0px 0 0px 35px;
+    display: none;
+}
+
+.sidebar nav ul.navLinks li ul.showMenu {
+    display: block;
+}
+
+.sidebar nav ul.navLinks li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar nav ul.navLinks li a span {
+    display: none;
+}
+
+.sidebar nav ul.navLinks li a .icon {
+    font-size: 21px;
+}
+
+.sidebar nav ul.navLinks li a:hover,
+.sidebar nav ul.navLinks li .icon:hover {
+    color: var(--primaryColor);
+    transition: all 0.4s ease;
+}
+
+/*Hover na Sidebar*/
+.sidebar:hover {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+}
+
+.sidebar:hover .logo img{
+    margin-right: 15px;
+}
+
+.sidebar:hover .logo span{
+    display: block;
+}
+
+.sidebar:hover .profile{
+    justify-content: start;
+    padding: 20px;
+}
+
+.sidebar:hover .imgProfile {
+    margin-right: 15px;
+}
+
+.sidebar:hover .profile .descriptionProfile{
+    display: flex;
+}
+
+.sidebar:hover nav ul.navLinks li a span {
+    display: block;
+    transition: 0.4s;
+}
+
+.sidebar:hover nav ul.navLinks li a .icon {
+    margin-right: 15px;
+}

@@ -1,0 +1,79 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.resume h2{
+    font-size: 20px;
+}
+
+.resume h2 span{
+    font-weight: 200;
+}
+
+.resume .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.resume .header .boxProfile {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.resume .header .boxProfile img{
+    width: 100px;
+    max-width: 100%;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.resume .header .resumeInfos p{
+    text-align: right;
+    margin: 10px;
+}
+
+.resume .header .icon{
+    margin-right: 5px;
+    color: var(--primaryColor);
+}
+
+.resumeContent h2{
+    margin-bottom: 40px;
+}
+
+.resumeContent p {
+    margin-bottom: 30px;
+}
+
+.resumeContent p span{
+    color: var(--primaryColor);
+}
+
+.resumeContent .skills{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.resumeContent .skills div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumeContent .skills div img{
+    max-width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.resumeContent .skills p{
+    margin: 0;
+}
